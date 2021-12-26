@@ -1,13 +1,41 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  @media(min-width: 1200px){
+     *,button, a{
+        cursor: none;
+    } 
+    
+  }
+  
+  .active{
+    @apply font-bold;
+  }
+  .bNav-active span{
+    @apply bg-black scale-[2] shadow-2xl dark:border dark:border-solid dark:border-white dark:bg-black ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25), 2px 2px 5px rgba(0, 0, 0, 0.25);
+  }
+  .App {
+    scroll-behavior: smooth;
+  }
+  
+  .project-list{
+    scroll-behavior: smooth;
+  }
+ 
+  .project-list::-webkit-scrollbar {
+   @apply block h-[10px] xl:h-[15px];
+
+  }
+  .project-list::-webkit-scrollbar-thumb {
+    @apply bg-[#f3e353] dark:bg-white rounded-full border-2 border-solid border-white dark:border-black ;
+    
+   
+  }
+

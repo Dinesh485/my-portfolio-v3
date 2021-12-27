@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
-import { useEffect } from 'react/cjs/react.development'
+import { useEffect } from 'react'
 import project1 from '../assets/project1.jpg'
 import project2 from '../assets/project2.jpg'
 import project3 from '../assets/project3.jpg'

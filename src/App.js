@@ -66,7 +66,7 @@ const animateSun = (position) =>{
 }
 useEffect(()=>{
   let i =0
-  app.current.addEventListener('wheel', (e) =>{
+ vw >= 1280 && app.current.addEventListener('wheel', (e) =>{
         
        if(e.deltaY >0){
         i++
@@ -84,7 +84,7 @@ useEffect(()=>{
        }
       
   })
-},[])
+},[vw])
  
   return (
   

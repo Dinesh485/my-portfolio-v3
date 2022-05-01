@@ -26,7 +26,7 @@ const ShadowSm = ({children}) =>{
 const Skill = ({children,name }) =>{
     return(
         <div className="relative w-fit group hover:scale-150 transition-transform ease-out">
-            <div className="absolute text-sm pointer-events-none right-0 top-1/2 -translate-y-1/2 transition-all group-hover:translate-x-[calc(100%-10px)] bg-white px-4 opacity-0 group-hover:opacity-100 dark:text-black " style = {{boxShadow: ' 4px 4px 10px rgba(0, 0, 0, 0.23)'}} >
+            <div className="absolute text-xs xl:text-sm pointer-events-none right-0 top-1/2 -translate-y-1/2 transition-all group-hover:translate-x-[calc(100%-10px)] bg-white px-4 opacity-0 group-hover:opacity-100 dark:text-black " style = {{boxShadow: ' 4px 4px 10px rgba(0, 0, 0, 0.23)'}} >
                 {name}
             </div>
             <ShadowSm>

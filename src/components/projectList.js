@@ -21,12 +21,12 @@ const Project = ({ image, title, description }) => {
         } 
       }
     }
-  return <motion.div variants = {varients} className="w-full h-full group  text-black dark:text-white  flex flex-col justify-end  leading-4 text-sm border-[#181818] lg:border-4 border-2 border-solid" style={{background: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}>
+  return <motion.div variants = {varients} className="w-full h-full group    flex flex-col justify-end  leading-4 text-sm border-[#181818]  dark:border-white  border xl:border-2 border-solid" style={{background: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center'  }}>
            
-           {!image ? <div className='w-full h-full grid items-center uppercase text-xl xl:text-2xl  text-center bg-white text-black font-bold'>coming soon</div> 
+           {!image ? <div className='w-full h-full grid items-center uppercase text-lg md:text-xl xl:text-2xl  text-center bg-white text-black font-bold p-4'>coming soon</div> 
            :
-            <div className=' lg:w-1/2 lg:font-medium  flex flex-col justify-end  p-2 lg:p-4 bg-black/30 text-white lg:text-[#181818] dark:text-white  lg:border-t-4 lg:border-r-4 border-[#181818]  lg:bg-[#f3e353]  lg:dark:bg-[#181818]  lg:translate-y-full lg:group-hover:translate-y-0 transition-all ease-out '>
-           <div className='capitalize'>{title}</div>
+            <div className=' xl:w-1/2 h-full xl:h-auto  flex flex-col justify-end  p-2 lg:p-4 bg-gradient-to-tr from-black  to-transparent xl:from-transparent xl:text-[#181818] xl:dark:text-white xl:border-[#181818] text-white xl:border-t-2 xl:border-r-2  xl:dark:border-white  xl:bg-[#f3e353]  xl:dark:bg-[#181818]  xl:translate-y-full xl:group-hover:translate-y-0 transition-all ease-out '>
+           <div className='capitalize my-2 border-b border-white w-fit pb-2 font-medium xl:border-[#181818] xl:dark:border-white xl:text-lg '>{title}</div>
           <p className='text-xs'>{description}</p>
            </div>}
   </motion.div>;

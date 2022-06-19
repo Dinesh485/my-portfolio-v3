@@ -5,6 +5,7 @@ import project1 from '../assets/project1.png'
 import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
+import project5 from '../assets/project5.png'
 import commingsoon from '../assets/commingsoon.gif'
 
 const Project = ({ image, title, description }) => {
@@ -61,8 +62,8 @@ const ProjectList = () => {
            <a href = 'https://heuristic-hodgkin-a8f129.netlify.app/' target = '_blank' className="overflow-hidden row-span-2 xl:row-span-1 ">
            <Project image = {project4} title = {'GifPlanet'} description={'Made with react and ghify api'} />
            </a>
-           <a href = '/' className="overflow-hidden ">
-           <Project image = {''} title = {'project5'} description={'some descr'} />
+           <a href = 'https://relaxed-hotteok-26475a.netlify.app/' target = '_blank' className="overflow-hidden ">
+           <Project image = {project5} title = {'Intro section with navigation'} description={'made using TailwindCss'} />
            </a>
            <a href = '/' className="overflow-hidden ">
            <Project image = {''} title = {'project6'} description={'some descr'} />

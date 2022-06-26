@@ -6,6 +6,7 @@ import project2 from '../assets/project2.png'
 import project3 from '../assets/project3.png'
 import project4 from '../assets/project4.png'
 import project5 from '../assets/project5.png'
+import project6 from '../assets/project6.png'
 import commingsoon from '../assets/commingsoon.gif'
 
 const Project = ({ image, title, description }) => {
@@ -65,8 +66,8 @@ const ProjectList = () => {
            <a href = 'https://relaxed-hotteok-26475a.netlify.app/' target = '_blank' className="overflow-hidden ">
            <Project image = {project5} title = {'Intro section with navigation'} description={'made using TailwindCss'} />
            </a>
-           <a href = '/' className="overflow-hidden ">
-           <Project image = {''} title = {'project6'} description={'some descr'} />
+           <a href = 'https://aquamarine-boba-3485c3.netlify.app/' target = '_blank' className="overflow-hidden ">
+           <Project image = {project6} title = {'Exprenses chart component'} description={'made using TailwindCss'} />
            </a>
        </motion.div>
        <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">

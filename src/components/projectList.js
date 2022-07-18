@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import { useEffect } from 'react'
-import project1 from '../assets/project1.png'
-import project2 from '../assets/project2.png'
-import project3 from '../assets/project3.png'
-import project4 from '../assets/project4.png'
-import project5 from '../assets/project5.png'
-import project6 from '../assets/project6.png'
-import commingsoon from '../assets/commingsoon.gif'
+import notesApp from '../assets/notesApp.png'
+import rockPaperScissors from '../assets/rockPaperScissors.png'
+import oldPortfolio from '../assets/oldPortfolio.png'
+import gifPlanet from '../assets/gifPlanet.png'
+import introSection from '../assets/introSection.png'
+import chartComponent from '../assets/chartComponent.png'
+
 
 const Project = ({ image, title, description }) => {
     const varients = {
@@ -52,42 +52,42 @@ const ProjectList = () => {
     <div ref  = {scrollEle} className="w-full h-full overflow-x-auto flex justify-start gap-2 xl:h-4/5 xl:w-11/12 xl:mx-auto project-list pb-2 snap-x snap-mandatory">
        <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
            <a href = 'https://frosty-panini-e1e45f.netlify.app/'  target = '_blank' className="overflow-hidden xl:col-span-2">
-                 <Project image = {project1} title = {'Notes app'} description={'made with react, mongodb, express'}/>
+                 <Project image = {notesApp} title = {'Notes app'} description={'made with react, mongodb, express'}/>
            </a>
            <a href = 'https://vigilant-boyd-f9dee2.netlify.app/' target = '_blank' className="overflow-hidden ">
-                 <Project image = {project2} title = {'Rock Paper scissors'} description={'made with react'} />
+                 <Project image = {rockPaperScissors} title = {'Rock Paper scissors'} description={'made with react'} />
            </a>
            <a href = 'https://laughing-fermi-b36d7d.netlify.app/' target = '_blank' className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
-           <Project image = {project3} title = {'Old portfolio'} description={'made with react'} />
+           <Project image = {oldPortfolio} title = {'Old portfolio'} description={'made with react'} />
            </a>
            <a href = 'https://heuristic-hodgkin-a8f129.netlify.app/' target = '_blank' className="overflow-hidden row-span-2 xl:row-span-1 ">
-           <Project image = {project4} title = {'GifPlanet'} description={'Made with react and ghify api'} />
+           <Project image = {gifPlanet} title = {'GifPlanet'} description={'Made with react and ghify api'} />
            </a>
            <a href = 'https://relaxed-hotteok-26475a.netlify.app/' target = '_blank' className="overflow-hidden ">
-           <Project image = {project5} title = {'Intro section with navigation'} description={'made using TailwindCss'} />
+           <Project image = {introSection} title = {'Intro section with navigation'} description={'made using TailwindCss'} />
            </a>
            <a href = 'https://aquamarine-boba-3485c3.netlify.app/' target = '_blank' className="overflow-hidden ">
-           <Project image = {project6} title = {'Exprenses chart component'} description={'made using TailwindCss'} />
+           <Project image = {chartComponent} title = {'Exprenses chart component'} description={'made using TailwindCss'} />
            </a>
        </motion.div>
        <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
            <a href = '/' className="overflow-hidden xl:col-span-2">
-                 <Project image = {''} title = {'project1'} description={'some descr'}/>
+                 <Project image = {''} title = {'notesApp'} description={'some descr'}/>
            </a>
            <a href = '/' className="overflow-hidden ">
-                 <Project image = {''} title = {'project2'} description={'some descr'} />
+                 <Project image = {''} title = {'rockPaperScissors'} description={'some descr'} />
            </a>
            <a href = '/' className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
-           <Project image = {''} title = {'project3'} description={'some descr'} />
+           <Project image = {''} title = {'oldPortfolio'} description={'some descr'} />
            </a>
            <a href = '/' className="overflow-hidden row-span-2 xl:row-span-1 ">
-           <Project image = {''} title = {'project4'} description={'some descr'} />
+           <Project image = {''} title = {'gifPlanet'} description={'some descr'} />
            </a>
            <a href = '/' className="overflow-hidden ">
-           <Project image = {''} title = {'project5'} description={'some descr'} />
+           <Project image = {''} title = {'introSection'} description={'some descr'} />
            </a>
            <a href = '/' className="overflow-hidden ">
-           <Project image = {''} title = {'project6'} description={'some descr'} />
+           <Project image = {''} title = {'chartComponent'} description={'some descr'} />
            </a>
        </motion.div>
       

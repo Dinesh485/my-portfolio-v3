@@ -42,7 +42,7 @@ const About = () => {
                     </motion.div>
                   </div>
                    <div className="flex flex-col gap-5 items-center ">
-                   <p className="text-base lg:text-lg max-w-[400px] ">I specialize in front end development and currently pursuing a degree in computer science. <br /> Learning web development on my own is both fun and challenging. I'm constantly improving myself to be a better developer than i am today.</p>
+                   <p className="text-base lg:text-lg max-w-[400px] ">Hello! I'm Dinesh from Andhra Pradesh, India. An aspiring front-end developer. <br /> Learning web development on my own is both fun and challenging. I'm constantly improving myself to be a better developer than I am today. We can have a chat if you want to know more about me.</p>
                    <h2 className="text-xl  font-medium">Skills</h2>
                    <div className="lg:w-full">
                        <Skills />

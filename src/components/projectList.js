@@ -8,6 +8,8 @@ import gifPlanet from '../assets/gifPlanet.png'
 import introSection from '../assets/introSection.png'
 import chartComponent from '../assets/chartComponent.png'
 import urlShortener from '../assets/urlShortener.png'
+import todoListApp from '../assets/todoListApp.png'
+import budgetCalculator from '../assets/budgetCalculator.png'
 
 
 const Project = ({ image, title, description,link }) => {
@@ -79,10 +81,10 @@ const ProjectList = () => {
 
            </div>
            <a href = '/' className="overflow-hidden ">
-                 <Project image = {''} title = {''} description={'some descr'} />
+                 <Project image = {budgetCalculator} title = {'Budget calculator'} description={'made with react and tailwindCss'} />
            </a>
            <a href = '/' className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
-           <Project image = {''} title = {''} description={'some descr'} />
+           <Project image = {todoListApp} title = {'Todo List App'} description={'Made with react and tailwindCss'} />
            </a>
            <a href = '/' className="overflow-hidden row-span-2 xl:row-span-1 ">
            <Project image = {''} title = {''} description={'some descr'} />

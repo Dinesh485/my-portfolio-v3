@@ -62,7 +62,6 @@ const ProjectList = () => {
                  <Project image = {notesApp} title = {'Notes app'} description={'made with react, mongodb, express'} link = {'https://notes-app111.netlify.app'}/>
            </div>
            <div className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
-                
                 <Project image = {urlShortener} title = {'url shortening page'} description={'made with nextjs, tailwindcss'} link =  'https://react-url-shortener111.netlify.app'/>
            </div>
            <div className="overflow-hidden row-span-2 xl:row-span-1 ">
@@ -77,24 +76,23 @@ const ProjectList = () => {
        </motion.div>
        <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
            <div className="overflow-hidden xl:col-span-2">
-             
              <Project image = {chartComponent} title = {'Exprenses chart component'} description={'made using TailwindCss'} link = 'https://expenses-chart-d3.netlify.app' />
            </div>
-           <a href = '/' className="overflow-hidden ">
-                 <Project image = {budgetCalculator} title = {'Budget calculator'} description={'made with react and tailwindCss'} />
-           </a>
-           <a href = '/' className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
-           <Project image = {todoListApp} title = {'Todo List App'} description={'Made with react and tailwindCss'} />
-           </a>
-           <a href = '/' className="overflow-hidden row-span-2 xl:row-span-1 ">
+           <div  className="overflow-hidden ">
+                 <Project image = {budgetCalculator} title = {'Budget calculator'} description={'made with react and tailwindCss'} link = 'https://react-budget-calculator111.netlify.app/' />
+           </div>
+           <div  className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
+           <Project image = {todoListApp} title = {'Todo List App'} description={'Made with react and tailwindCss'} link = 'https://todo-list-app111.netlify.app/' />
+           </div>
+           <div className="overflow-hidden row-span-2 xl:row-span-1 ">
            <Project image = {rockPaperScissors} title = {'Rock Paper scissors'} description={'made with react'}  link = 'https://react-rock-paper-sicssors.netlify.app' />
-           </a>
-           <a href = '/' className="overflow-hidden ">
+           </div>
+           <div  className="overflow-hidden ">
            <Project image = {''} title = {''} description={'some descr'} />
-           </a>
-           <a href = '/' className="overflow-hidden ">
+           </div>
+           <div  className="overflow-hidden ">
            <Project image = {''} title = {''} description={'some descr'} />
-           </a>
+           </div>
        </motion.div>
       
        

@@ -10,7 +10,7 @@ import chartComponent from '../assets/chartComponent.png'
 import urlShortener from '../assets/urlShortener.png'
 import todoListApp from '../assets/todoListApp.png'
 import budgetCalculator from '../assets/budgetCalculator.png'
-
+import webcreativesio from '../assets/webcreativesio.png'
 
 const Project = ({ image, title, description,link }) => {
     const varients = {
@@ -56,29 +56,29 @@ const ProjectList = () => {
     <div ref  = {scrollEle} className="w-full h-full overflow-x-auto flex justify-start gap-2 xl:h-4/5 xl:w-11/12 xl:mx-auto project-list pb-2 snap-x snap-mandatory">
        <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
            <div  className="overflow-hidden xl:col-span-2">
-                 <Project image = {notesApp} title = {'Notes app'} description={'made with react, mongodb, express'} link = {'https://notes-app111.netlify.app'}/>
+                 <Project image = {webcreativesio} title = {'webcreatives.io'} description={'Web site for a startup'} link = 'https://webcreatives.io/' />
            </div>
            <div className = 'overflow-hidden'>
-                 <Project image = {gifPlanet} title = {'GifPlanet'} description={'Made with react and ghify api'} link = 'https://gifplanet.netlify.app' />
+                 <Project image = {notesApp} title = {'Notes app'} description={'made with react, mongodb, express'} link = {'https://notes-app111.netlify.app'}/>
            </div>
            <div className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
+                
                 <Project image = {urlShortener} title = {'url shortening page'} description={'made with nextjs, tailwindcss'} link =  'https://react-url-shortener111.netlify.app'/>
            </div>
            <div className="overflow-hidden row-span-2 xl:row-span-1 ">
-                <Project image = {oldPortfolio} title = {'Old portfolio'} description={'made with react'} link = 'https://dineshg.netlify.app' />
-
+                <Project image = {gifPlanet} title = {'GifPlanet'} description={'Made with react and ghify api'} link = 'https://gifplanet.netlify.app' />
            </div>
            <div  className="overflow-hidden ">
-               <Project image = {rockPaperScissors} title = {'Rock Paper scissors'} description={'made with react'}  link = 'https://react-rock-paper-sicssors.netlify.app' />
+                <Project image = {oldPortfolio} title = {'Old portfolio'} description={'made with react'} link = 'https://dineshg.netlify.app' />
            </div>
            <div className="overflow-hidden ">
-                <Project image = {chartComponent} title = {'Exprenses chart component'} description={'made using TailwindCss'} link = 'https://expenses-chart-d3.netlify.app' />
+           <Project image = {introSection} title = {'Intro section with navigation'} description={'made using TailwindCss'} link = 'https://intro-section-with-navigation.netlify.app'/>
            </div>
        </motion.div>
        <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
            <div className="overflow-hidden xl:col-span-2">
-             <Project image = {introSection} title = {'Intro section with navigation'} description={'made using TailwindCss'} link = 'https://intro-section-with-navigation.netlify.app'/>
-
+             
+             <Project image = {chartComponent} title = {'Exprenses chart component'} description={'made using TailwindCss'} link = 'https://expenses-chart-d3.netlify.app' />
            </div>
            <a href = '/' className="overflow-hidden ">
                  <Project image = {budgetCalculator} title = {'Budget calculator'} description={'made with react and tailwindCss'} />
@@ -87,7 +87,7 @@ const ProjectList = () => {
            <Project image = {todoListApp} title = {'Todo List App'} description={'Made with react and tailwindCss'} />
            </a>
            <a href = '/' className="overflow-hidden row-span-2 xl:row-span-1 ">
-           <Project image = {''} title = {''} description={'some descr'} />
+           <Project image = {rockPaperScissors} title = {'Rock Paper scissors'} description={'made with react'}  link = 'https://react-rock-paper-sicssors.netlify.app' />
            </a>
            <a href = '/' className="overflow-hidden ">
            <Project image = {''} title = {''} description={'some descr'} />

@@ -44,14 +44,14 @@ const ContactLinks = ({extend}) =>{
             
              <p className  = 'xl:-translate-x-1/2 xl:opacity-0 xl:group-hover:translate-x-0 xl:group-hover:opacity-100 xl:transition-all xl:duration-150' >Whatsapp</p>
         </motion.a>
-        <motion.a variants={varients}  href = 'mailto:ghantasaladinesh@gmail.com'  className="flex gap-5 items-center xs:gap-6  w-full group">
+        <motion.a variants={varients}  href = 'mailto:ghantasaladinesh6@gmail.com'  className="flex gap-5 items-center xs:gap-6  w-full group">
                  
 
 
         <svg className="w-[40px] xs:w-[45px] xl:w-[35px]  fill-current flex-shrink-0   xl:group-hover:scale-150 xl:transition-transform xl:duration-150" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
 
             
-             <p className  = 'xl:-translate-x-1/2 xl:opacity-0 xl:group-hover:translate-x-0 xl:group-hover:opacity-100 xl:transition-all xl:duration-150'>ghantasaladinesh<br></br>@gmail.com</p>
+             <p className  = 'xl:-translate-x-1/2 xl:opacity-0 xl:group-hover:translate-x-0 xl:group-hover:opacity-100 xl:transition-all xl:duration-150'>ghantasaladinesh6<br></br>@gmail.com</p>
         </motion.a>
     </motion.div>
     )

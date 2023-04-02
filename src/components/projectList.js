@@ -1,17 +1,46 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import { useEffect } from 'react'
-import notesApp from '../assets/notesApp.png'
-import rockPaperScissors from '../assets/rockPaperScissors.png'
-import oldPortfolio from '../assets/oldPortfolio.png'
-import gifPlanet from '../assets/gifPlanet.png'
-import introSection from '../assets/introSection.png'
-import chartComponent from '../assets/chartComponent.png'
-import urlShortener from '../assets/urlShortener.png'
-import todoListApp from '../assets/todoListApp.png'
-import budgetCalculator from '../assets/budgetCalculator.png'
 import webcreativesio from '../assets/webcreativesio.png'
+import fastfoodeminescu from '../assets/fastfoodeminescu.png'
+import restorio from '../assets/restorio.png'
+import anafoxbeauty from '../assets/anafoxbeauty.png'
+import outlight from '../assets/outlight.png'
 
+const projectList = [
+  {
+    image: webcreativesio,
+    title: 'webcreatives.io',
+    description: 'Web site for a startup',
+    link: 'https://webcreatives.io'
+  },
+  {
+    image: fastfoodeminescu,
+    title: 'fast Food Eminescu',
+    description: 'A food delivery website for a romanian restraunt',
+    link: 'https://fastfoodeminescu.ro'
+  },
+  {
+    image: anafoxbeauty,
+    title: 'AnaFoxBeauty',
+    description: 'Website for a beauty parlor',
+    link: 'https://anafoxbeauty.org'
+  },
+  {
+    image: restorio,
+    title: 'Restorio',
+    description: 'A website for an apple repair store in romania',
+    link: 'https://restorio.ro'
+  },
+  {
+    image: outlight,
+    title: 'outlight',
+    description: 'Outlight is a website that provides instagram and youtube services',
+    link: 'https://restorio.ro'
+  },
+
+  
+]
 const Project = ({ image, title, description,link }) => {
     const varients = {
       hidden: {
@@ -54,49 +83,37 @@ const ProjectList = () => {
     },[])
   return (
     <div ref  = {scrollEle} className="w-full h-full overflow-x-auto flex justify-start gap-2 xl:h-4/5 xl:w-11/12 xl:mx-auto project-list pb-2 snap-x snap-mandatory">
-       <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
-           <div  className="overflow-hidden xl:col-span-2">
-                 <Project image = {webcreativesio} title = {'webcreatives.io'} description={'Web site for a startup'} link = 'https://webcreatives.io/' />
-           </div>
-           <div className = 'overflow-hidden'>
-                 <Project image = {notesApp} title = {'Notes app'} description={'made with react, mongodb, express'} link = {'https://notes-app111.netlify.app'}/>
-           </div>
-           <div className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
-                <Project image = {urlShortener} title = {'url shortening page'} description={'made with nextjs, tailwindcss'} link =  'https://react-url-shortener111.netlify.app'/>
-           </div>
-           <div className="overflow-hidden row-span-2 xl:row-span-1 ">
-                <Project image = {gifPlanet} title = {'GifPlanet'} description={'Made with react and ghify api'} link = 'https://gifplanet.netlify.app' />
-           </div>
-           <div  className="overflow-hidden ">
-                <Project image = {oldPortfolio} title = {'Old portfolio'} description={'made with react'} link = 'https://dineshg.netlify.app' />
-           </div>
-           <div className="overflow-hidden ">
-           <Project image = {introSection} title = {'Intro section with navigation'} description={'made using TailwindCss'} link = 'https://intro-section-with-navigation.netlify.app'/>
-           </div>
-       </motion.div>
-       <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
-           <div className="overflow-hidden xl:col-span-2">
-             <Project image = {chartComponent} title = {'Exprenses chart component'} description={'made using TailwindCss'} link = 'https://expenses-chart-d3.netlify.app' />
-           </div>
-           <div  className="overflow-hidden ">
-                 <Project image = {budgetCalculator} title = {'Budget calculator'} description={'made with react and tailwindCss'} link = 'https://react-budget-calculator111.netlify.app/' />
-           </div>
-           <div  className="overflow-hidden  row-span-2 xl:row-span-1 xl:col-span-2">
-           <Project image = {todoListApp} title = {'Todo List App'} description={'Made with react and tailwindCss'} link = 'https://todo-list-app111.netlify.app/' />
-           </div>
-           <div className="overflow-hidden row-span-2 xl:row-span-1 ">
-           <Project image = {rockPaperScissors} title = {'Rock Paper scissors'} description={'made with react'}  link = 'https://react-rock-paper-sicssors.netlify.app' />
-           </div>
-           <div  className="overflow-hidden ">
-           <Project image = {''} title = {''} description={'some descr'} />
-           </div>
-           <div  className="overflow-hidden ">
-           <Project image = {''} title = {''} description={'some descr'} />
-           </div>
-       </motion.div>
-      
-       
-      
+      {Array.from({length: Math.ceil((projectList.length / 6)  ) }, (_, i) =>{
+               let arr = [...projectList.slice(i * 6, (i + 1) * 6)]
+               if (arr.length < 6) {
+                arr = arr.concat(new Array(6 - arr.length).fill({
+                  image:'',
+                  title: '',
+                  description: '',
+                  link: ''
+                },));
+                arr = arr.slice(0, 6);
+              }
+              console.log(arr)
+          return <motion.div initial ='hidden' whileInView= 'visible' viewport={{ once: true, amount: 0.5}} transition={{staggerChildren: 0.1}} className="snap-center h-full min-w-full  grid grid-flow-col grid-cols-2 grid-rows-4 gap-2  xl:grid-cols-4 xl:grid-rows-2">
+                  {arr.map((project, index) =>{
+                      if(project.title){
+                        return(
+                          <div key = {index} className = {`overflow-hidden ${index === 0 && 'xl:col-span-2'} ${index===2 && 'row-span-2 xl:row-span-1 xl:col-span-2'} ${index === 3 && 'row-span-2 xl:row-span-1 '}`}>
+                              <Project {...project}/>
+                        </div>
+                         )
+                      }else{
+                        return (
+                          <div key = {index} className = {`overflow-hidden ${index === 0 && 'xl:col-span-2'} ${index===2 && 'row-span-2 xl:row-span-1 xl:col-span-2'} ${index === 3 && 'row-span-2 xl:row-span-1 '}`}>
+                              <Project image = {''} title = {''} description={' '} />
+                        </div>
+                        )
+                      }
+                  })}
+          </motion.div>
+      })}
+
     </div>
   );
 };
